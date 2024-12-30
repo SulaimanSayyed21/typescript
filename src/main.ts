@@ -23,6 +23,7 @@ import { Person } from './exercise-01/person';
 import { Student } from './exercise-03/student';
 import { Car } from './exercise-04/car'
 import { ElectricCar } from './exercise-04/electric-car'
+import { Circle, Rectangle } from './exercise-05/shape'; // Importing from shape.ts
 
 //exercise-01
 const Alice = new Person('Alice', 20 );
@@ -49,3 +50,19 @@ console.log(prius.getCarDetails());
 console.log(renault.charge());
 console.log(renault.getCarDetails());
 console.log(tesla.getCarDetails())
+
+
+//exercise-05
+
+
+// Create a Circle instance with radius 5
+const circle = new Circle(5);
+console.log(circle.describe()); // Output: This is a shape.
+console.log("Circle Area:", circle.area()); // Output: Circle Area: 78.53981633974483
+console.log("Circle Perimeter:", circle.perimeter()); // Output: Circle Perimeter: 31.41592653589793
+
+// Create a Rectangle instance with width 4 and height 7
+const rectangle = new Rectangle(4, 7);
+console.log(rectangle.describe()); // Output: This is a shape.
+console.log("Rectangle Area:", rectangle.area()); // Output: Rectangle Area: 28
+console.log("Rectangle Perimeter:", rectangle.perimeter()); // Output: Rectangle Perimeter: 22
